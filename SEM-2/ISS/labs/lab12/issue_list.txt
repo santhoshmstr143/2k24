@@ -1,0 +1,30 @@
+2    Issue 1: CORS issues
+1    Issue 2: Prefix missing for analytics & quiz
+1    Issue 3: Mongo_URI changed to Mongo_URL
+1    Issue 4: database name mismatch between 'item' and 'items'
+1    Issue 5: BaseModel missing in items and name has the datatype int
+1    Issue 6: users.py line 11 is post, it should be get
+1    Issue 7: users.py line 29 the delete command is wrong
+1    Issue 8: quiz.py line 43 is not random, so same question will always come
+1    Issue 9: quiz.py line 50 is a get, should be a post
+1    Issue 10: items.py routers is wrong
+1    Issue 11: items.py line 26,27,28 shouldn't exist
+1    Issue 12: line 30 the path parameters are wrong in items.py
+1    Issue 13: line 36 and 37 are wrong in analytics.py
+1    Issue 14: main has users router import missing
+1    Issue 15: line 29 has some users already, why? in analytics.py
+5    Issue 16: Narain too lazy to implement style.css, they need to implement it
+2    Issue 17: home.js is useless
+1    Issue 18: quiz.html has 2 nav controls missing
+1    Issue 19: scripts/profile.js is changed to styles/profile.js in profile.html
+1    Issue 20: line 17, userCounts is a name mismatch in profile.html
+2    Issue 21: BASEURL missing in line profile.js
+1    Issue 22: profile.js line 43 is calling a method called PATCH
+2    Issue 23: search code is removed from news.js
+1    Issue 24: container not in items.html
+1    Issue 25: no nav is analytics.html
+2    Issue 26: in analytics.js the baseurl port is wrong
+1    Issue 27: line 29 in items.js has the wrong http method
+2    Issue 28: analytics.py isn't sending the matplotlib generated image back
+1    Issue 29: line 45 on items.js has the wrong content upe
+1    Issue 30: search options are missing in news.js

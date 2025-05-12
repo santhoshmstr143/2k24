@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Waves - Find Tunes That Match Your Frequency</title>
+    <link rel="stylesheet" href="../static/spotlight.css">
+</head>
+<body>
+<header class="home_header">
+    <p class="home_header_title">
+        Waves
+    </p>
+    <img src="../static/LOGO.png" class="img_logo">
+</header>
+<nav class="home_nav">
+    <p class="home_header_tag">
+        Find Tunes That Match Your Frequency
+    </p>
+    <p  class="home_nav_content">
+        <a href="index.html">Home</a>
+    </p>
+    <p  class="home_nav_content">
+        <a href="artists.html">Artists</a>
+    </p>
+    <p  class="home_nav_content">
+        <a href="search.html">Search</a>
+    </p>
+    <p  class="home_nav_content">
+        <a href="spotlight.html" style="background-color:white;border-radius:10px">Spotlight</a>
+    </p>
+    <p  class="home_nav_content">
+        <a href="playlist.html">Playlist</a>
+    </p>
+    <p  class="home_nav_content">
+        <a href="about.html">About</a>
+    </p>
+</nav>
+<main>
+    <div class="light1">
+        <div style="left: 300px;top:870px;" class="ray1"></div>
+    </div>
+        
+    <div class="light2"> 
+        <div style="left: 1550px;top:870px;" class="ray2"></div>
+    </div>
+    <div id="main-img">
+        <img  id="why" src="https://i.scdn.co/image/ab67616d0000b273a1c37f3fd969287c03482c3b" style="border-radius:70px"></th>
+    </div>
+    <div class="name_table_div">
+        <table class="name_table">
+            <tr class="name_tr">
+                <th class="name_th" style="font-size:70px">LANA DEL RAY</th>
+            </tr>
+            <tr><td>   </td></tr>
+            <tr class="name_tr">
+                <th class="name_th">About</th>
+            </tr>
+            <tr class="name_tr">
+                <td class="name_td">Gives you all the feels. Bold, impactful music.</td>
+            </tr>
+            <tr class="name_tr">
+                <th class="name_th">Countdown to next album:</th>
+            </tr>
+            <tr class="name_tr">
+                <td class="name_td"><p id="countdown"></p></td>
+            </tr>
+        </table>
+    </div>
+    <div class="label_div">
+        <h1 style="font-family: 'Indie Flower'; text-align: center; text-decoration: underline ">
+            VIBE LEVEL?
+        </h1>
+        <div style="align-content: center; align-items: center; align-self: center">
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5">5 stars</label>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">4 stars</label>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">3 stars</label>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">2 stars</label>
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1">1 star</label>
+        </div>
+    </div>
+    <form id="name-form">
+        <input type="text" id="name-input" name="term" placeholder="Enter Name Here">
+    </form>
+    <form id="review-form">
+        <input type="text" id="review-input" name="term" placeholder="Any Thoughts?">
+        <button type="submit" id="review-btn">Submit   &#x21a9;</button>
+    </form>
+    <div class="name_table_div">
+        <table id="results-table" class="name_table">
+            <thead>
+            <tr>
+                <th class="name_th">Name</th>
+                <th class="name_th">Rating</th>
+                <th class="name_th">Review</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- existing or dynamically added rows will go here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="../static/spotlight.js"></script>
+    <script src="../static/naveffect.js"></script>
+</main>
+<footer>
+    <p class="home_left_content"> ver 0.0.1</p>
+    <a href="about.html">
+        <p class="home_right_content">@The_Last_of_JS</p>
+    </a>
+</footer>
+</body>
+</html>

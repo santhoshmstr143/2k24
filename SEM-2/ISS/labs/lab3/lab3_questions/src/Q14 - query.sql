@@ -1,0 +1,5 @@
+USE DB;
+SELECT Fname, Lname, Salary
+FROM EMPLOYEE
+ORDER BY Salary DESC
+LIMIT 1 OFFSET 1;

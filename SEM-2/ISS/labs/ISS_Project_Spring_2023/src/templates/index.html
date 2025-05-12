@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Waves - Find Tunes That Match Your Frequency</title>
+        <link rel="stylesheet" href="../static/index.css">
+        <!-- <link rel="icon" href="data:;base64,iVBORw0KGgo="> -->
+    </head>
+<body onclick="transitionToPage('home.html')">
+    
+    <main>
+        <div id="initial-logo">
+            <img  src="../static/LOGO.png">
+        </div>
+        <div id="elem" >|</div>
+        <script>
+            let i = 0;
+            const txt = 'WAVES';
+            const speed = 400; /* The speed/duration of the effect in milliseconds */
+
+            function typeWriter() {
+            if (i < txt.length) 
+            {
+                //document.getElementById("elem").innerHTML -= '|';
+                document.getElementById("elem").innerHTML = document.getElementById("elem").innerHTML.substring(0,document.getElementById("elem").innerHTML.length-1);
+                document.getElementById("elem").innerHTML += txt.charAt(i);
+                document.getElementById("elem").innerHTML += '|';
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+            
+        }
+        
+            typeWriter();
+            window.transitionToPage = function(href) {
+                if(document.getElementById("elem").innerHTML!=="WAVES")
+                {
+                    setTimeout(transitionToPage, speed);
+                }
+                else
+                {
+                    document.getElementById("elem").innerHTML = document.getElementById("elem").innerHTML.substring(0,document.getElementById("elem").innerHTML.length-1);
+
+                }
+                document.querySelector('body').style.opacity = 0
+                setTimeout(function() { 
+                    window.location.href = href
+                }, 500)
+            }
+
+            document.addEventListener('DOMContentLoaded', function(event) {
+                document.querySelector('body').style.opacity = 1
+            })
+            
+            
+        </script>
+    </main>
+</body>
+</html>

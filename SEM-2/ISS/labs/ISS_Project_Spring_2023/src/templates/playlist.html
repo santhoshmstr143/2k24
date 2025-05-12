@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Waves - Find Tunes That Match Your Frequency</title>
+    <link rel="stylesheet" href="../static/home.css">
+    <link rel="stylesheet" href="../static/album.css">
+</head>
+
+<body>
+    <header class="home_header">
+        <p class="home_header_title">
+            Waves
+        </p>
+        <img src="../static/LOGO.png" class="img_logo">
+
+    </header>
+    <nav class="home_nav">
+        <p class="home_header_tag">
+            Find Tunes That Match Your Frequency
+        </p>
+        <p class="home_nav_content">
+            <a href="index.html">Home</a>
+        </p>
+        <p class="home_nav_content">
+            <a href="artists.html">Artists</a>
+        </p>
+        <p class="home_nav_content">
+            <a href="search.html">Search</a>
+        </p>
+        <p class="home_nav_content">
+            <a href="spotlight.html">Spotlight</a>
+        </p>
+        <p class="home_nav_content">
+            <a href="playlist.html" style="background-color:white;border-radius:10px">Playlist</a>
+        </p>
+        <p class="home_nav_content">
+            <a href="about.html">About</a>
+        </p>
+
+    </nav>
+    <main>
+        <div class="album_song_div" style="width: 90%;">
+            {% if s>0 %}
+            {% for item in navigation %}
+            <div class="album_song_table">
+                <p class="album_song_name">{{item[0]}}</p>
+
+                <form action="playlist.html" method="post">
+                    <button type="submit" value="{{item[0]}}" class=" btn_data" name="something">Remove</button>
+                </form>
+                <p class="album_song_duration">{{item[1]}}</p>
+
+            </div>
+            {% endfor %}
+            {% else %}
+                <p style="font-size:200px;color:white;text-align: center;">NO SONGS IN PLAYLIST</p>
+            {% endif %}
+        </div>
+    </main>
+    <footer>
+        <p class="home_left_content"> ver 0.0.1</p>
+        <a href="./about.html">
+            <p class="home_right_content">@The_Last_of_JS</p>
+        </a>
+    </footer>
+    <script src="../static/naveffect.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Waves - Find Tunes That Match Your Frequency</title>
+        <link rel="stylesheet" href="../static/search.css">
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+        <link rel="icon" type="image/x-icon" href="../static/favicon.ico" />
+        <script src="../static/search.js" defer></script>
+    </head>
+<body>
+    <header class="home_header">
+        <p class="home_header_title">
+            Waves
+        </p>
+        <img src="../static/LOGO.png" class="img_logo">
+    </header>
+    <nav class="home_nav">
+        <p class="home_header_tag">
+            Find Tunes That Match Your Frequency
+        </p>
+        <p  class="home_nav_content">
+            <a href="index.html">Home</a>
+        </p>
+        <p  class="home_nav_content">
+            <a href="artists.html">Artists</a>
+        </p>
+        <p  class="home_nav_content">
+            <a href="search.html" style="background-color:white;border-radius:10px">Search</a>
+        </p>
+        <p  class="home_nav_content">
+            <a href="spotlight.html">Spotlight</a>
+        </p>
+        <p  class="home_nav_content">
+            <a href="playlist.html">Playlist</a>
+        </p>
+        <p  class="home_nav_content">
+            <a href="about.html">About</a>
+        </p>
+    </nav>
+    <main>
+        <div class="head-name" id="head-name">
+            Search for an artist, album or song:
+        </div>
+        <div id="search-form">
+            <input type="text" id="search-input" name="term" placeholder="search">
+            <button id="search-btn" >&#128269;</button>
+        </div>
+        <div id="filter-form">
+                <label class="lab" style="width:800px;">Filter Options:</label>
+                <div>
+                <label for="max-time" class="lab">Maximum Time :</label>
+                <input type="number" id="max-time" name="max-time" min="1" max="60" value="5">
+                </div>
+                <br>
+                <div>
+                <label for="explicit" class="lab">Explicitness:</label>
+                <select id="explicit" name="explicit">
+                    <option value="cleaned">Clean</option>
+                    <option value="explicit">Explicit</option>
+                </select>
+                </div>
+                <br>
+                <button type="button" id="clear-filters">Clear Filters</button>
+            </div>
+        <div id="result-prompt">HELLO WONDERFUL PERSON</div>
+        <div id="results"></div> 
+        <script src="../static/naveffect.js"></script>
+    </main>
+    <footer>
+        <p class="home_left_content"> ver 0.0.1</p>
+        <a href="about.html">
+            <p class="home_right_content">@The_Last_of_JS</p>
+        </a>
+    </footer>
+</body>
+</html>

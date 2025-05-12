@@ -1,0 +1,9 @@
+Employee_Fname,Employee_Lname,Supervisor_Fname,Supervisor_Lname
+John,Smith,Franklin,Wong
+Franklin,Wong,James,Borg
+Joyce,English,Franklin,Wong
+Ramesh,Narayan,Franklin,Wong
+James,Borg,NULL,NULL
+Jennifer,Wallace,James,Borg
+Ahmad,Jabbar,Jennifer,Wallace
+Alicia,Zelaya,Jennifer,Wallace
