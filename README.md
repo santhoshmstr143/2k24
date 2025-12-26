@@ -17,8 +17,5 @@ This repository includes:
 ## ❗ A Little Note
 
 I've tried my best to include **everything important** and to ensure the **information is accurate** and helpful.  
-Please **don’t complain** if something’s not perfect – this is a humble attempt to make life easier for all of us students 🥺✨
-
-Let’s support each other with kindness and share knowledge freely 💖
 
 ---
