@@ -1,0 +1,6 @@
+body { font-family: sans-serif; display: flex; justify-content: center; padding: 50px; }
+.card { border: 1px solid #ccc; padding: 20px; border-radius: 8px; width: 300px; }
+.hidden { display: none; }
+.error-text { color: red; font-weight: bold; }
+input { padding: 5px; width: 60%; }
+button { padding: 5px 10px; cursor: pointer; }
